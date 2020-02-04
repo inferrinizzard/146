@@ -1,0 +1,8 @@
+Team Members : 
+Hanette Le
+Sean Song
+
+Modifications:
+Changed Exploration Factor to sqrt(2)
+Change num ROLLOUTS to 5
+Change rollout DEPTH to 3

@@ -1,0 +1,8 @@
+DEBUG:root:Order:2 3 10.0
+DEBUG:root:Finish turn
+
+ERROR:root:Error in bot.
+Traceback (most recent call last):
+  File "opponent_bots/defensive_bot.py", line 91, in <module>
+    current_line = input()
+EOFError: EOF when reading a line
