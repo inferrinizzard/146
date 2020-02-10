@@ -1,0 +1,12 @@
+INFO:root:
+Selector: High Level Ordering of Strategies
+| Sequence: Offensive Strategy
+| | Check: have_largest_fleet
+| | Action: omega_spread
+| Sequence: Deny Strategy
+| | Check: if_neutral_planet_available
+| | Action: deny_enemy_fleet
+| Sequence: Oppression
+| | Check: apex
+| | Action: order_alpha
+| Action: omega_spread

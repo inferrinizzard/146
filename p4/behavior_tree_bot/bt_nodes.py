@@ -43,7 +43,6 @@ class Composite(Node):
                 string += '| ' * (indent + 1) + str(child) + '\n'
         return string
 
-
 ############################### Composite Nodes ##################################
 class Selector(Composite):
     @log_execution
@@ -65,7 +64,6 @@ class Sequence(Composite):
                 return False
         else:  # for loop completed without failure; return success
             return True
-
 
 ############################### Leaf Nodes ##################################
 class Check(Node):

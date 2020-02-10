@@ -21,28 +21,36 @@ from planet_wars import PlanetWars, finish_turn
 # You have to improve this tree or create an entire new one that is capable
 # of winning against all the 5 opponent bots
 def setup_behavior_tree():
-
+    
     # Top-down construction of behavior tree
     root = Selector(name='High Level Ordering of Strategies')
+    
+    oppression = Sequence(name="Oppression")
+    alpha_check = Check(apex)
+    plan_alpha = Action(order_alpha)
+    oppression.child_nodes = [alpha_check, plan_alpha]
 
     offensive_plan = Sequence(name='Offensive Strategy')
     largest_fleet_check = Check(have_largest_fleet)
-    attack = Action(attack_weakest_enemy_planet)
+    attack = Action(attack_plan)
     offensive_plan.child_nodes = [largest_fleet_check, attack]
 
-    spread_sequence = Sequence(name='Spread Strategy')
+    deny_sequence = Sequence(name='Deny Strategy')
     neutral_planet_check = Check(if_neutral_planet_available)
-    spread_action = Action(spread_to_weakest_neutral_planet)
-    spread_sequence.child_nodes = [neutral_planet_check, spread_action]
-
-    root.child_nodes = [offensive_plan, spread_sequence, attack.copy()]
+    deny_plan = Action(deny_enemy_fleet)
+    s_plan = Action(spread_plan)
+    deny_sequence.child_nodes = [neutral_planet_check, deny_plan]
+    
+    root.child_nodes = [offensive_plan, deny_sequence, oppression, attack.copy()]
 
     logging.info('\n' + root.tree_to_string())
     return root
 
 # You don't need to change this function
 def do_turn(state):
-    behavior_tree.execute(planet_wars)
+    behavior_tree.execute(state)
+    # logging.info("test")
+    # logging.info((" ").join([p.growth_rate for p in state.neutral_planets()]))
 
 if __name__ == '__main__':
     logging.basicConfig(filename=__file__[:-3] + '.log', filemode='w', level=logging.DEBUG)
