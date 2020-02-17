@@ -1,0 +1,56 @@
+{'bench': 1, 'furnace': 1, 'plank': 1, 'stick': 2, 'stone_axe': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<craft furnace at bench> Makes {'furnace': 1} in 1 time; 
+         {'bench': 1, 'cobble': 8, 'plank': 1, 'stick': 2, 'stone_axe': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 7, 'plank': 1, 'stick': 2, 'stone_axe': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 6, 'plank': 1, 'stick': 2, 'stone_axe': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 5, 'plank': 1, 'stick': 2, 'stone_axe': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 4, 'plank': 1, 'stick': 2, 'stone_axe': 1, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<craft stone_axe at bench> Makes {'stone_axe': 1} in 1 time;
+         {'bench': 1, 'cobble': 7, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 6, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 5, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 4, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 3, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 2, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'cobble': 1, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<stone_pickaxe for cobble> Makes {'cobble': 1} in 2 time;
+         {'bench': 1, 'plank': 1, 'stick': 4, 'stone_pickaxe': 1, 'wooden_pickaxe': 1}
+<craft stone_pickaxe at bench> Makes {'stone_pickaxe': 1} in 1 time;
+         {'bench': 1, 'cobble': 3, 'plank': 1, 'stick': 6, 'wooden_pickaxe': 1}
+<wooden_pickaxe for cobble> Makes {'cobble': 1} in 4 time;
+         {'bench': 1, 'cobble': 2, 'plank': 1, 'stick': 6, 'wooden_pickaxe': 1}
+<wooden_pickaxe for cobble> Makes {'cobble': 1} in 4 time;
+         {'bench': 1, 'cobble': 1, 'plank': 1, 'stick': 6, 'wooden_pickaxe': 1}
+<wooden_pickaxe for cobble> Makes {'cobble': 1} in 4 time;
+         {'bench': 1, 'plank': 1, 'stick': 6, 'wooden_pickaxe': 1}
+<craft wooden_pickaxe at bench> Makes {'wooden_pickaxe': 1} in 1 time;
+         {'bench': 1, 'plank': 4, 'stick': 8}
+<craft bench> Makes {'bench': 1} in 1 time;
+         {'plank': 8, 'stick': 8}
+<craft plank> Makes {'plank': 4} in 1 time;
+         {'plank': 4, 'stick': 8, 'wood': 1}
+<craft plank> Makes {'plank': 4} in 1 time;
+         {'stick': 8, 'wood': 2}
+<punch for wood> Makes {'wood': 1} in 4 time;
+         {'stick': 8, 'wood': 1}
+<craft stick> Makes {'stick': 4} in 1 time;
+         {'plank': 2, 'stick': 4, 'wood': 1}
+<craft stick> Makes {'stick': 4} in 1 time;
+         {'plank': 4, 'wood': 1}
+<craft plank> Makes {'plank': 4} in 1 time;
+         {'wood': 2}
+<punch for wood> Makes {'wood': 1} in 4 time;
+         {'wood': 1}
+<punch for wood> Makes {'wood': 1} in 4 time;
+         {}
+None

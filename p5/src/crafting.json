@@ -6,9 +6,12 @@
 	"Items": [
 		"bench",
 		"cart",
+		"chest",
 		"coal",
 		"cobble",
 		"furnace",
+		"hopper",
+		"hopper_cart",
 		"ingot",
 		"iron_axe",
 		"iron_pickaxe",
@@ -258,6 +261,44 @@
 			"Consumes": {
 				"cobble": 3,
 				"stick": 2
+			},
+			"Time": 1
+		},
+		"craft chest at bench": {
+			"Produces": {
+				"chest": 1
+			},
+			"Requires": {
+				"bench": true
+			},
+			"Consumes": {
+				"plank": 8
+			},
+			"Time": 1
+		},
+		"craft hopper at bench": {
+			"Produces": {
+				"hopper": 1
+			},
+			"Requires": {
+				"bench": true
+			},
+			"Consumes": {
+				"iron": 5,
+				"chest": 1
+			},
+			"Time": 1
+		},
+		"craft hopper_cart at bench": {
+			"Produces": {
+				"hopper_cart": 1
+			},
+			"Requires": {
+				"bench": true
+			},
+			"Consumes": {
+				"hopper": 1,
+				"cart": 1
 			},
 			"Time": 1
 		},

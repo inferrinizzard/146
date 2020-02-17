@@ -8,17 +8,14 @@ class Recipe():
         self.consumes = val.get("Consumes")
         self.complexity = complexity
         self.raw = raw_recipe
-        self.raw_cost = sum(self.consumes.values()) if self.consumes else 0
-        self.cost = self.raw_cost + 10 * \
-            len(self.requires) if self.requires else 0  # add ten if need tool (maybe adjust this or balance it out against time)
+        self.cost = sum(self.consumes.values()) if self.consumes else 0
+        # self.cost = self.raw_cost + 10 * \
+        # len(self.requires) if self.requires else 0  # add ten if need tool (maybe adjust this or balance it out against time)
 
     def __repr__(self):  # fancy to_string
         return "<" + self.name + "> Makes " + str(self.produces) + " in " + str(self.time) + " time; "
         + ("Needs: " + str(self.consumes) + "; " if self.consumes else "") + ("Tools: " + ", ".join(self.requires.keys()) +
                                                                               " " if self.requires else "") + "Raw Cost: " + str(self.raw_cost) + " Cost: " + str(self.cost) + " Complexity: " + str(self.complexity)
-
-
-'''↓ all references to crap = Crafting["Recipes"] (aka loaded json from the file)'''
 
 
 def get_children(item):

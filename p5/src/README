@@ -1,0 +1,10 @@
+We implemented standard forward search.
+
+Heuristic:
+We avoid states where we build tools if we already have tools.
+We avoid states where we continue to mine or craft items if we reach a cap.
+Cap is determined by reading the crafting file and placing the highest value
+an item is needed.
+
+Partners:
+Ivan Lopez, Sean Song
